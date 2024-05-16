@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaGoogle, FaUniversity } from "react-icons/fa";
 
-import contoh1Img from "../../public/contoh1.png";
+import bpjkImg from "../../public/Bpjk.png"
 import athamabelkahasolusiImg from "../../public/athamabelkahasolusi.jpg";
 import fooseImg from "../../public/FOOSE.png";
 
@@ -106,11 +106,11 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "femmewear ready to wear",
+    title: "SIM LAB BPJK",
     description:
-      "A project from a fasihon retail company project. A marketplace website to introduce and sell products.",
-    tags: ["Laravel", "Livewire 3", "MySQL", "Tailwind", "filament 3"],
-    imageUrl: contoh1Img,
+      "The website application is developed for the Construction Services Development Agency. It is designed to facilitate the BPJK in receiving construction testing orders.",
+    tags: ["Laravel", "MySQL", "Bootstrap"],
+    imageUrl: bpjkImg,
   },
   {
     title: "atha mabel kahasolusi",
