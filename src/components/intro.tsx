@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import React, { useEffect } from 'react'
-import rafaImg from '../../public/rafa.jpg'
+import rafaImg from '../../public/rafazack.jpg'
 import { motion } from "framer-motion"
 import Link from 'next/link'
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs'
