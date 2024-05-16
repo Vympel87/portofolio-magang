@@ -3,7 +3,7 @@
 import React, { createContext, useContext, useState } from 'react'
 import type { SectionName } from "@/lib/types";
 
-type activeSectionContextProviderProps = {
+type ActiveSectionContextProviderProps = {
   children: React.ReactNode
 }
 
@@ -16,7 +16,7 @@ type ActiveSectionContextType = {
 
 export const ActiveSectionContext = createContext<ActiveSectionContextType | null>(null)
 
-export default function activeSectionContextProvider({ children } : activeSectionContextProviderProps) {
+export default function activeSectionContextProvider({ children } : ActiveSectionContextProviderProps) {
   const [activeSection, setActiveSection] = useState<SectionName>("Home")
   const [timeOfLastClick, setTimeOfLastClick] =  useState(0)
 
