@@ -15,7 +15,7 @@ import pythonImg from "../../public/languageImg/Python.png";
 import javaImg from "../../public/languageImg/Java.png";
 import kotlinImg from "../../public/languageImg/Kotlin.png";
 import c_sharpImg from "../../public/languageImg/C-Sharp.png";
-import rustImg from "../../public/languageImg/Rust.png";
+import golangImg from "../../public/languageImg/Golang.png";
 
 import bootstrapImg from "../../public/framework/Bootstrap.png"
 import expressImg from "../../public/framework/Express.png"
@@ -34,7 +34,7 @@ import mysqlImg from "../../public/Database/mysql.png"
 import postgreesqlImg from "../../public/Database/postgresql.png"
 import mongodbImg from "../../public/Database/mongodb.png"
 
-import pandasImg from "../../public/AI/Pandas.png"
+import pandasImg from "../../public/AI/pandas.png"
 import matplotlibImg from "../../public/AI/Matplotlib.png"
 import numpyImg from "../../public/AI/numpy.png"
 import tensorflowImg from "../../public/AI/Tensorflow.png"
@@ -166,8 +166,8 @@ export const skillsData = [
     imageUrl: c_sharpImg
   },
   {
-    title: "Rust",
-    imageUrl: rustImg
+    title: "Golang",
+    imageUrl: golangImg
   },
   {
     title: "Bootstrap",
