@@ -34,7 +34,7 @@ import mysqlImg from "../../public/Database/mysql.png"
 import postgreesqlImg from "../../public/Database/postgresql.png"
 import mongodbImg from "../../public/Database/mongodb.png"
 
-import pandasImg from "../../public/AI/pandas.png"
+import pandasImg from "../../public/AI/Pandas.png"
 import matplotlibImg from "../../public/AI/Matplotlib.png"
 import numpyImg from "../../public/AI/numpy.png"
 import tensorflowImg from "../../public/AI/Tensorflow.png"
