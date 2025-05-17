@@ -1,50 +1,58 @@
-"use client"
+"use client";
 
-import React from 'react'
-import SectionHeading from './section-heading'
-import { skillsData } from '@/lib/data'
-import { useSectionInView } from '@/lib/hooks'
-import { delay, motion } from "framer-motion";
-import Image from 'next/image'
-
-const fadeInAnimationVariants = {
-    initial: {
-        opacity: 0,
-        y: 100
-    },
-    animate: (index: number) => ( {
-        opacity: 1,
-        y: 0,
-        transition: {
-            delay: 0.05 * index
-        }
-    })
-}
+import React from "react";
+import { skillsData } from "@/lib/data";
+import { useSectionInView } from "@/lib/hooks";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Skills() {
-  const { ref } = useSectionInView("Skills", 0.75)
+  const { ref } = useSectionInView("Skills", 0.75);
 
   return (
-      <section ref={ref} id="skills" className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40">
-          <SectionHeading>My Skills</SectionHeading>
-          <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
-               {
-                  skillsData.map((skill, index) => (
-                    <motion.li
-                          key={index}
-                          variants={fadeInAnimationVariants}
-                          initial="initial"
-                          whileInView="animate"
-                          viewport={{ 
-                            once: true
-                          }}
-                          custom={index}
-                          className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/40 dark:text-white/80 flex items-center justify-center">
-                          <Image src={skill.imageUrl} alt="" width={40} height={40} />
-                    </motion.li>  
-                  ))
-              }
-          </ul>
+    <section
+      ref={ref}
+      id="skills"
+      className="relative mb-28 scroll-mt-28 sm:mb-20 text-center w-full max-w-7xl px-4 mx-auto"
+    >
+      {/* Marquee container */}
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ type: "spring", stiffness: 80, duration: 0.7 }}
+        className="relative h-[100px] mt-10 overflow-hidden"
+        style={{
+          maskImage:
+            "linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0))",
+          WebkitMaskImage:
+            "linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0))",
+        }}
+      >
+        <motion.div
+          className="flex gap-6 w-max"
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{
+            repeat: Infinity,
+            duration: 20,
+            ease: "linear",
+          }}
+        >
+          {[...skillsData, ...skillsData].map((skill, index) => (
+            <div
+              key={index}
+              className="w-[70px] h-[100px] flex-shrink-0 flex items-center justify-center"
+            >
+              <Image
+                src={skill.imageUrl}
+                alt={`skill-${index}`}
+                width={70}
+                height={70}
+                className="object-contain"
+              />
+            </div>
+          ))}
+        </motion.div>
+      </motion.div>
     </section>
-  )
+  );
 }

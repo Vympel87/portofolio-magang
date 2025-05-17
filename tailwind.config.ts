@@ -13,9 +13,20 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      keyframes: {
+        scrollLeft: {
+          to: {
+            left: "-120px",
+          },
+        },
+      },
+      animation: {
+        scrollLeft: "scrollLeft 30s linear infinite",
+      },
     },
   },
+  darkMode: "class",
   plugins: [],
-  darkMode: "class"
 };
+
 export default config;

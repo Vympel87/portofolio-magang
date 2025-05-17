@@ -1,46 +1,67 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaGoogle, FaUniversity } from "react-icons/fa";
+import { FaGoogle } from "react-icons/fa";
 
 import bpjkImg from "../../public/Bpjk.png"
 import athamabelkahasolusiImg from "../../public/athamabelkahasolusi.jpg";
 import fooseImg from "../../public/FOOSE.png";
 
-import htmlImg from "../../public/languageImg/HTML.png";
-import cssImg from "../../public/languageImg/CSS.png";
-import javascriptImg from "../../public/languageImg/JavaScript.png";
-import typescriptImg from "../../public/languageImg/TypeScript.png";
-import phpImg from "../../public/languageImg/PHP.png";
-import pythonImg from "../../public/languageImg/Python.png";
-import javaImg from "../../public/languageImg/Java.png";
-import kotlinImg from "../../public/languageImg/Kotlin.png";
-import c_sharpImg from "../../public/languageImg/C-Sharp.png";
-import golangImg from "../../public/languageImg/Golang.png";
+import htmlImg from "../../public/language/HTML.png";
+import cssImg from "../../public/language/CSS.png";
+import javascriptImg from "../../public/language/JavaScript.png";
+import typescriptImg from "../../public/language/Typescript.png";
+import phpImg from "../../public/language/PHP.png";
+import pythonImg from "../../public/language/python.png";
+import javaImg from "../../public/language/Java.png";
+import kotlinImg from "../../public/language/Kotlin.png";
+import c_sharpImg from "../../public/language/C-Sharp.png";
+import golangImg from "../../public/language/Golang.png";
 
-import bootstrapImg from "../../public/framework/Bootstrap.png"
+import bootstrapImg from "../../public/Framework/Bootstrap.png"
 import expressImg from "../../public/framework/Express.png"
 import fastapiImg from "../../public/framework/Fastapi.png"
 import flaskImg from "../../public/framework/flask.png"
 import laravelImg from "../../public/framework/laravel.png"
 import nextjsImg from "../../public/framework/Next-Js.png"
-import nodejsImg from "../../public/framework/Node-Js.png"
-import reactImg from "../../public/framework/React.png"
+import svelteImg from "../../public/framework/Svelte.png"
 import tailwindImg from "../../public/framework/Tailwind.png"
-import unityImg from "../../public/framework/Unity.png"
+import tensorflowImg from "../../public/framework/Tensorflow.png"
 
-import firebaseImg from "../../public/Database/firebase.png"
-import prismaImg from "../../public/Database/prisma.png"
-import mysqlImg from "../../public/Database/mysql.png"
-import postgreesqlImg from "../../public/Database/postgresql.png"
-import mongodbImg from "../../public/Database/mongodb.png"
+import matplotlibImg from "../../public/library/Matplotlib.png"
+import numpyImg from "../../public/library/numpy.png"
+import openCVImg from "../../public/library/OpenCV.png"
+import pandasImg from "../../public/library/Pandas.png"
+import reactImg from "../../public/library/React.png"
+import reduxImg from "../../public/library/Redux.png"
+import zodImg from "../../public/library/Zod.png"
 
-import pandasImg from "../../public/AI/Pandas.png"
-import matplotlibImg from "../../public/AI/Matplotlib.png"
-import numpyImg from "../../public/AI/numpy.png"
-import tensorflowImg from "../../public/AI/Tensorflow.png"
+import firebaseImg from "../../public/database/firebase.png"
+import mysqlImg from "../../public/database/mysql.png"
+import postgreesqlImg from "../../public/database/postgresql.png"
+import mongodbImg from "../../public/database/mongodb.png"
+import awsS3Img from "../../public/database/awsS3.png"
+import redisImg from "../../public/database/redis.png"
+import timescaleDBImg from "../../public/database/TimeScaleDB.png"
 
-import reduxImg from "../../public/Integration/Redux.png"
-import gitImg from "../../public/Integration/Git.png"
+import prismaImg from "../../public/ORM/prisma.png"
+
+import nodeJsImg from "../../public/runtime/Node-Js.png"
+
+import gitImg from "../../public/tools/Git.png"
+import postmanImg from "../../public/tools/Postman.png"
+
+import unityImg from "../../public/gameEngine/Unity.png"
+import unrealImg from "../../public/gameEngine/Unreal.png"
+
+import graphQLImg from "../../public/api/GraphQL.png"
+import websocketImg from "../../public/api/websocket.png"
+
+import figmaImg from "../../public/design/Figma.png"
+import blenderImg from "../../public/design/Blender.png"
+
+import dockerImg from "../../public/devops/Docker.png"
+import gcpImg from "../../public/devops/GCP.png"
+import linuxImg from "../../public/devops/linux.png"
 
 export const links = [
   {
@@ -71,36 +92,34 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Beginning of College",
-    role: "Newbie",
-    description:
-      "I entered college by choosing a software engineering technology study program, then learn algorithms to data structures and early stage application development.",
-    icon: React.createElement(FaUniversity),
-    date: "2022",
+    title: "Literasi Digital ADITIF",
+    role: "Backend Engineer",
+    icon: React.createElement(CgWorkAlt),
+    date: "February 2025 - June 2025",
   },
   {
-    title: "SIM-LAB BPJK",
-    role: "BackEnd Developer",
-    description:
-      "My campus formed a team, one of which was me with my four college friends to work on a project given by a campus partner to improve existing features and add new features on the admin side",
+    title: "Widya Matador",
+    role: "Backend Engineer",
     icon: React.createElement(CgWorkAlt),
-    date: "2023",
+    date: "September 2024 - December 2024",
+  },
+  {
+    title: "Komatik UGM",
+    role: "3D Modeller",
+    icon: React.createElement(CgWorkAlt),
+    date: "March 2024 - December 2024",
   },
   {
     title: "Google Solution Challange",
-    role: "BackEnd Developer",
-    description:
-      "I Join Google Development Student Club, then formed a team of 4 people to create problem solving projects based on SDGs",
+    role: "Backend Engineer",
     icon: React.createElement(FaGoogle),
-    date: "2023 - 2024",
+    date: "October 2023 - May 2024",
   },
   {
-    title: "Atha Mable Kahasolusi",
-    role: "BackEnd Developer",
-    description:
-      "My team and I received a new project from a wood furniture shop to create a company profile.",
+    title: "Kahasolusi",
+    role: "Backend Engineer",
     icon: React.createElement(CgWorkAlt),
-    date: "2024",
+    date: "February 2023 - June 2024",
   },
 ] as const;
 
@@ -129,6 +148,18 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
+  {
+    title: "GraphQL",
+    imageUrl: graphQLImg
+  },
+  {
+    title: "Websocket",
+    imageUrl: websocketImg
+  },
+  {
+    title: "Node.js",
+    imageUrl: nodeJsImg
+  },
   {
     title: "HTML",
     imageUrl: htmlImg
@@ -194,40 +225,28 @@ export const skillsData = [
     imageUrl: nextjsImg
   },
   {
-    title: "React",
-    imageUrl: reactImg
-  },
-  {
-    title: "Node.js",
-    imageUrl: nodejsImg
+    title: "Svelte.js",
+    imageUrl: svelteImg
   },
   {
     title: "Express",
     imageUrl: expressImg
   },
   {
-    title: "Unity",
-    imageUrl: unityImg
+    title: "Tensorflow",
+    imageUrl: tensorflowImg
   },
   {
-    title: "Firebase",
-    imageUrl: firebaseImg
+    title: "React",
+    imageUrl: reactImg
   },
   {
-    title: "Prisma",
-    imageUrl: prismaImg
+    title: "OpenCV",
+    imageUrl: openCVImg
   },
   {
-    title: "MySQL",
-    imageUrl: mysqlImg
-  },
-  {
-    title: "PostgreSQL",
-    imageUrl: postgreesqlImg
-  },
-  {
-    title: "MongoDB",
-    imageUrl: mongodbImg
+    title: "Zod",
+    imageUrl: zodImg
   },
   {
     title: "Matplotlib",
@@ -242,15 +261,75 @@ export const skillsData = [
     imageUrl: pandasImg
   },
   {
-    title: "Tensorflow",
-    imageUrl: tensorflowImg
-  },
-  {
     title: "Redux",
     imageUrl: reduxImg
   },
   {
+    title: "Firebase",
+    imageUrl: firebaseImg
+  },
+  {
+    title: "MySQL",
+    imageUrl: mysqlImg
+  },
+  {
+    title: "PostgreSQL",
+    imageUrl: postgreesqlImg
+  },
+  {
+    title: "MongoDB",
+    imageUrl: mongodbImg
+  },
+  {
+    title: "AWSS3",
+    imageUrl: awsS3Img
+  },
+  {
+    title: "Redis",
+    imageUrl: redisImg
+  },
+  {
+    title: "TimescalDB",
+    imageUrl: timescaleDBImg
+  },
+  {
+    title: "Prisma",
+    imageUrl: prismaImg
+  },
+  {
+    title: "Unity",
+    imageUrl: unityImg
+  },
+  {
+    title: "Unreal",
+    imageUrl: unrealImg
+  },
+  {
     title: "Git",
     imageUrl: gitImg
+  },
+  {
+    title: "Postman",
+    imageUrl: postmanImg
+  },
+  {
+    title: "Docker",
+    imageUrl: dockerImg
+  },
+  {
+    title: "GCP",
+    imageUrl: gcpImg
+  },
+  {
+    title: "Linux",
+    imageUrl: linuxImg
+  },
+  {
+    title: "Figma",
+    imageUrl: figmaImg
+  },
+  {
+    title: "Blender",
+    imageUrl: blenderImg
   },
 ] as const;
