@@ -95,7 +95,7 @@ export const servicesData = [
   {
     title: "Software Engineer",
     description:
-      "Designs and builds efficient, scalable software systems. Skilled in problem-solving, data structures, and system architecture for reliable application development.",
+      "Designs and builds efficient, scalable software systems. Including problem-solving, data structures, and system architecture for reliable application development.",
     icon: React.createElement(FaCode),
   },
   {
