@@ -1,30 +1,9 @@
 "use client";
 
-import { FaCode, FaLaptopCode, FaTasks } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useTheme } from "@/context/theme-context";
 import SectionHeading from "./section-heading";
-
-const services = [
-  {
-    icon: <FaCode size={28} />,
-    title: "Software Engineer",
-    description:
-      "Designs and builds efficient, scalable software systems. Skilled in problem-solving, data structures, and system architecture for reliable application development.",
-  },
-  {
-    icon: <FaLaptopCode size={28} />,
-    title: "Web Developer",
-    description:
-      "Develops responsive and dynamic websites using modern frameworks. Focused on clean UI, UX principles, and seamless backend integration.",
-  },
-  {
-    icon: <FaTasks size={28} />,
-    title: "Project Management",
-    description:
-      "Coordinates teams and resources to deliver projects on time. Experienced in Agile methodologies, planning, and risk mitigation.",
-  },
-];
+import { servicesData } from "@/lib/data";
 
 export default function Services() {
   const { theme } = useTheme();
@@ -37,7 +16,7 @@ export default function Services() {
       <SectionHeading>Services That I Can Offer</SectionHeading>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-        {services.map((service, index) => (
+        {servicesData.map((service, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 40 }}
@@ -50,11 +29,11 @@ export default function Services() {
             `}
           >
             <div
-              className={`w-10 h-10 flex items-center justify-center rounded-lg text-white mb-4
-                ${theme === "light" ? "bg-white text-black" : "bg-[#333] text-white"}
-              `}
+                className={`w-10 h-10 flex items-center justify-center rounded-lg mb-4
+                    ${theme === "light" ? "bg-white !text-black" : "bg-[#333] text-white"}
+                `}
             >
-              {service.icon}
+                {service.icon}
             </div>
             <h3
               className={`text-lg font-semibold mb-2 ${

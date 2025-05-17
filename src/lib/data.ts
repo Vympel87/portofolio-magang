@@ -1,10 +1,11 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaGoogle } from "react-icons/fa";
+import { FaGoogle, FaCode, FaLaptopCode, FaTasks } from "react-icons/fa";
 
 import bpjkImg from "../../public/Bpjk.png"
 import athamabelkahasolusiImg from "../../public/athamabelkahasolusi.jpg";
 import fooseImg from "../../public/FOOSE.png";
+import cakapImg from "../../public/literasi-digital.png";
 
 import htmlImg from "../../public/language/HTML.png";
 import cssImg from "../../public/language/CSS.png";
@@ -35,13 +36,13 @@ import reactImg from "../../public/library/React.png"
 import reduxImg from "../../public/library/Redux.png"
 import zodImg from "../../public/library/Zod.png"
 
-// import awsS3Img from "../../public/database/awsS3.png"
-// import firebaseImg from "../../public/database/firebase.png"
-// import mongodbImg from "../../public/database/mongodb.png"
-// import mysqlImg from "../../public/database/mysql.png"
-// import postgreesqlImg from "../../public/database/postgresql.png"
-// import redisImg from "../../public/database/redis.png"
-// import timescaleDBImg from "../../public/database/TimeScaleDB.png"
+import awsS3Img from "../../public/data/AWSS3.png"
+import firebaseImg from "../../public/data/fire_base.png"
+import mongodbImg from "../../public/data/mongoDB.png"
+import mysqlImg from "../../public/data/MySQL.png"
+import postgreesqlImg from "../../public/data/postgreSQL.png"
+import redisImg from "../../public/data/redis.png"
+import timescaleDBImg from "../../public/data/TimeScaleDB.png"
 
 import prismaImg from "../../public/ORM/prisma.png"
 
@@ -90,9 +91,30 @@ export const links = [
   },
 ] as const;
 
+export const servicesData = [
+  {
+    title: "Software Engineer",
+    description:
+      "Designs and builds efficient, scalable software systems. Skilled in problem-solving, data structures, and system architecture for reliable application development.",
+    icon: React.createElement(FaCode),
+  },
+  {
+    title: "Web Developer",
+    description:
+      "Develops responsive and dynamic websites using modern frameworks. Focused on clean UI, UX principles, and seamless backend integration.",
+    icon: React.createElement(FaLaptopCode),
+  },
+  {
+    title: "Project Management",
+    description:
+      "Coordinates teams and resources to deliver projects on time. Experienced in Agile methodologies, planning, and risk mitigation.",
+    icon: React.createElement(FaTasks),
+  },
+] as const;
+
 export const experiencesData = [
   {
-    title: "Literasi Digital ADITIF",
+    title: "Asosio Digital",
     role: "Backend Engineer",
     icon: React.createElement(CgWorkAlt),
     date: "February 2025 - June 2025",
@@ -144,6 +166,13 @@ export const projectsData = [
       "A mobile application for food management and reducing food waste. accompanied by a recipe search feature based on the availability of food ingredients",
     tags: ["Flutter", "Firebase", "Tensorflow", "Fast API"],
     imageUrl: fooseImg,
+  },
+  {
+    title: "Cakap Digital",
+    description:
+      "A web application as a platform for testing literacy, logic, and quantitative that can be used for employee recruitment",
+    tags: ["React", "tailwind", "PostgreSQL", "NodeJs", "Typescript", "Express"],
+    imageUrl: cakapImg,
   },
 ] as const;
 
@@ -264,34 +293,34 @@ export const skillsData = [
     title: "Redux",
     imageUrl: reduxImg
   },
-  // {
-  //   title: "Firebase",
-  //   imageUrl: firebaseImg
-  // },
-  // {
-  //   title: "MySQL",
-  //   imageUrl: mysqlImg
-  // },
-  // {
-  //   title: "PostgreSQL",
-  //   imageUrl: postgreesqlImg
-  // },
-  // {
-  //   title: "MongoDB",
-  //   imageUrl: mongodbImg
-  // },
-  // {
-  //   title: "AWSS3",
-  //   imageUrl: awsS3Img
-  // },
-  // {
-  //   title: "Redis",
-  //   imageUrl: redisImg
-  // },
-  // {
-  //   title: "TimescalDB",
-  //   imageUrl: timescaleDBImg
-  // },
+  {
+    title: "Firebase",
+    imageUrl: firebaseImg
+  },
+  {
+    title: "MySQL",
+    imageUrl: mysqlImg
+  },
+  {
+    title: "PostgreSQL",
+    imageUrl: postgreesqlImg
+  },
+  {
+    title: "MongoDB",
+    imageUrl: mongodbImg
+  },
+  {
+    title: "AWSS3",
+    imageUrl: awsS3Img
+  },
+  {
+    title: "Redis",
+    imageUrl: redisImg
+  },
+  {
+    title: "TimescalDB",
+    imageUrl: timescaleDBImg
+  },
   {
     title: "Prisma",
     imageUrl: prismaImg
