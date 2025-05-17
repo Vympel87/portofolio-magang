@@ -11,13 +11,13 @@ import cssImg from "../../public/language/CSS.png";
 import javascriptImg from "../../public/language/JavaScript.png";
 import typescriptImg from "../../public/language/Typescript.png";
 import phpImg from "../../public/language/PHP.png";
-import pythonImg from "../../public/language/python.png";
+import pythonImg from "../../public/language/Python.png";
 import javaImg from "../../public/language/Java.png";
 import kotlinImg from "../../public/language/Kotlin.png";
 import c_sharpImg from "../../public/language/C-Sharp.png";
 import golangImg from "../../public/language/Golang.png";
 
-import bootstrapImg from "../../public/Framework/Bootstrap.png"
+import bootstrapImg from "../../public/framework/Bootstrap.png"
 import expressImg from "../../public/framework/Express.png"
 import fastapiImg from "../../public/framework/Fastapi.png"
 import flaskImg from "../../public/framework/flask.png"
