@@ -35,13 +35,13 @@ import reactImg from "../../public/library/React.png"
 import reduxImg from "../../public/library/Redux.png"
 import zodImg from "../../public/library/Zod.png"
 
-import firebaseImg from "../../public/database/firebase.png"
-import mysqlImg from "../../public/database/mysql.png"
-import postgreesqlImg from "../../public/database/postgresql.png"
-import mongodbImg from "../../public/database/mongodb.png"
-import awsS3Img from "../../public/database/awsS3.png"
-import redisImg from "../../public/database/redis.png"
-import timescaleDBImg from "../../public/database/TimeScaleDB.png"
+// import awsS3Img from "../../public/database/awsS3.png"
+// import firebaseImg from "../../public/database/firebase.png"
+// import mongodbImg from "../../public/database/mongodb.png"
+// import mysqlImg from "../../public/database/mysql.png"
+// import postgreesqlImg from "../../public/database/postgresql.png"
+// import redisImg from "../../public/database/redis.png"
+// import timescaleDBImg from "../../public/database/TimeScaleDB.png"
 
 import prismaImg from "../../public/ORM/prisma.png"
 
@@ -264,34 +264,34 @@ export const skillsData = [
     title: "Redux",
     imageUrl: reduxImg
   },
-  {
-    title: "Firebase",
-    imageUrl: firebaseImg
-  },
-  {
-    title: "MySQL",
-    imageUrl: mysqlImg
-  },
-  {
-    title: "PostgreSQL",
-    imageUrl: postgreesqlImg
-  },
-  {
-    title: "MongoDB",
-    imageUrl: mongodbImg
-  },
-  {
-    title: "AWSS3",
-    imageUrl: awsS3Img
-  },
-  {
-    title: "Redis",
-    imageUrl: redisImg
-  },
-  {
-    title: "TimescalDB",
-    imageUrl: timescaleDBImg
-  },
+  // {
+  //   title: "Firebase",
+  //   imageUrl: firebaseImg
+  // },
+  // {
+  //   title: "MySQL",
+  //   imageUrl: mysqlImg
+  // },
+  // {
+  //   title: "PostgreSQL",
+  //   imageUrl: postgreesqlImg
+  // },
+  // {
+  //   title: "MongoDB",
+  //   imageUrl: mongodbImg
+  // },
+  // {
+  //   title: "AWSS3",
+  //   imageUrl: awsS3Img
+  // },
+  // {
+  //   title: "Redis",
+  //   imageUrl: redisImg
+  // },
+  // {
+  //   title: "TimescalDB",
+  //   imageUrl: timescaleDBImg
+  // },
   {
     title: "Prisma",
     imageUrl: prismaImg
