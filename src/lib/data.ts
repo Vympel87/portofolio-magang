@@ -83,8 +83,8 @@ export const links = [
   },
   
   {
-    name: "Experience",
-    hash: "#experience",
+    name: "Experiencex",
+    hash: "#experiences",
   },
   {
     name: "Contact",
