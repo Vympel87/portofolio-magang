@@ -70,17 +70,18 @@ export const links = [
     hash: "#home",
   },
   {
-    name: "About",
-    hash: "#about",
+    name: "Skills",
+    hash: "#skills",
+  },
+  {
+    name: "Services",
+    hash: "#services",
   },
   {
     name: "Projects",
     hash: "#projects",
   },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
+  
   {
     name: "Experience",
     hash: "#experience",
