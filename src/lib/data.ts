@@ -6,6 +6,7 @@ import bpjkImg from "../../public/Bpjk.png"
 import athamabelkahasolusiImg from "../../public/athamabelkahasolusi.jpg";
 import fooseImg from "../../public/FOOSE.png";
 import cakapImg from "../../public/literasi-digital.png";
+import kknImg from "../../public/web-KKN.png"
 
 import htmlImg from "../../public/language/HTML.png";
 import cssImg from "../../public/language/CSS.png";
@@ -174,6 +175,13 @@ export const projectsData = [
       "A web application as a platform for testing literacy, logic, and quantitative that can be used for employee recruitment",
     tags: ["React", "tailwind", "PostgreSQL", "NodeJs", "Typescript", "Express"],
     imageUrl: cakapImg,
+  },
+  {
+    title: "Merintis Bumiijo",
+    description:
+      "A digital magazine website to enhance literacy, digital access, and MSME classification development",
+    tags: ["HTML", "tailwind", "Javascript"],
+    imageUrl: kknImg,
   },
 ] as const;
 
